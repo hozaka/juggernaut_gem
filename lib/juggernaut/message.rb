@@ -13,7 +13,7 @@ module Juggernaut
     end
     
     def to_s
-      { :id => @id.to_s, :body => @body, :signature => @signature }.to_json
+      { :id => @id.to_s, :body => @body, :signature => @signature }.to_json(:ascii_only => true)
     end
   end
 end
